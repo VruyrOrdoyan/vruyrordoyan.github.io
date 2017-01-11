@@ -203,6 +203,26 @@ div.page div.content
             {
                 background-color:#fff;
             }
+     
+     div.page div.content div.company-info
+     {
+        margin-left:auto;
+        margin-right:auto;
+        width:80%;
+     }
+     
+        div.page div.content div.company-info div.company-logo
+        {
+            display:inline-block;
+            width:50px;
+            height:50px;
+        }
+        
+        div.page div.content div.company-info div.compani-details
+        {
+            padding:10px;
+            display:inline-block;    
+        }
         
 div.page div.footer
 {
