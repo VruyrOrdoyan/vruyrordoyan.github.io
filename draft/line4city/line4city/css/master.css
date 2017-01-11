@@ -1,0 +1,272 @@
+﻿html, 
+body {padding:0; margin:0;overflow:hidden;}
+a {text-decoration:none;}        
+.conceptual {border: 1px solid #000;border-style:dashed;box-sizing: border-box;}
+
+div.draft
+{
+    position:absolute;
+    font-size:255px;
+    z-index:auto;
+    transform: rotate(45deg);
+    top:220px;
+    left:20%;
+    font-family:Arial;
+    opacity:0.2;
+    overflow:hidden;
+}
+        
+div.page 
+{   
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    min-height:250px;
+    min-width:300px;
+}
+        
+div.page div.header
+{
+    height:100px;
+    position:relative;
+}
+        
+    div.page div.header div.logo-area
+    {
+        width:170px;
+        height:inherit;
+        display:inline-block;
+        float:left;
+    }
+        
+        div.page div.header div.logo-area div.logo
+        {
+            width: 50px;
+            height: 50px;
+            margin-top: 17px;
+            margin-left:auto;
+            margin-right: auto;
+            text-align:center;
+        }
+        
+    div.page div.header div.functional
+    {
+        display:inline-block;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:170px;
+        right:0;
+    }
+            
+        div.page div.header div.functional div.search
+        {   
+            position:absolute;
+            padding-top:30px;
+            top:0;
+            bottom:0;
+            left:0;
+            right:200px;
+            padding-left:10px;
+        }
+                
+            div.page div.header div.functional div.search div.search-area
+            {
+                max-width:400px;
+                margin-left:auto;
+                margin-right:auto;
+                height:30px;
+                position:relative;
+            }
+                
+                div.page div.header div.functional div.search div.search-area input[type="text"]
+                {   
+                    width:100%;
+                    height:100%;
+                    margin:0;
+                    padding:0;
+                    border-width:0;
+                    border-right-width:30px;
+                    box-sizing: border-box;
+                }
+                        
+                div.page div.header div.functional div.search div.search-area button
+                {   
+                    position:absolute;
+                    right:0;
+                    top:0;
+                    height:100%;
+                    width:30px;
+                }
+                
+        div.page div.header div.functional div.language
+        {
+            background-color:#ccc;
+            float:right;
+            height:100%;
+            width:200px;
+            text-align:center;
+        }
+        
+            div.page div.header div.functional div.language span.language-panel
+            {
+                
+            }
+                
+div.page div.content
+{   
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-top:100px;
+    margin-bottom:100px;
+    overflow:auto;
+}
+        
+    div.page div.content div.login
+    {
+        height:20px;
+        right:20px;
+        padding-right:8px;
+        position:fixed;
+    }
+            
+    div.page div.content div.services
+    {
+        margin-left:auto;
+        margin-right:auto;
+        width:80%;
+        text-align:center;
+    }
+            
+        div.page div.content div.services a.block
+        {
+            width:150px;
+            height:150px;
+            line-height: 150px;
+            display:inline-block;
+            margin:10px;
+            border-radius: 50%;
+            vertical-align:middle;
+            background-color:#ccc;
+            text-decoration:none;
+        }
+                    
+            div.page div.content div.services a.block:hover
+            {
+                background-color:#fff;
+            }
+      
+        div.page div.content div.companies,
+        div.page div.content div.service-providers
+        {
+            margin-top:5px;
+            margin-left:auto;
+            margin-right:auto;
+            width:80%;
+            text-align:center;
+        }
+        
+    div.page div.content div.letters
+    {
+        font-size:25px;
+    }
+    
+    div.page div.content div.letters div.label
+    {
+        float:left;
+        background-color:#ccc;
+    }
+    
+    div.page div.content div.list
+    {
+        text-align:left;
+    }
+    
+        div.page div.content div.list a.item
+        {
+            display:inline-block;
+            line-height:50px;
+            text-align:center;
+            width:140px;
+            height:50px;
+            border-radius: 20%;
+            margin:5px;
+            background-color:#ccc;
+        }
+        
+            div.page div.content div.list a.item:hover
+            {
+                background-color:#fff;
+            }
+        
+div.page div.footer
+{
+    height:100px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+@media only screen and (max-width: 800px) 
+{
+    div.page div.header
+    {
+        height:50px;
+    }
+                
+    div.page div.header div.logo-area
+    {
+        width:50px;
+    }
+                
+    div.page div.header div.logo-area div.logo
+    {   
+        margin-top: 0;
+    }
+            
+    div.page div.header div.functional
+    {
+        left:50px;
+    }
+            
+    div.page div.header div.functional div.search
+    {   
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        padding-right:50px;
+        padding-top:5px;
+    }
+                
+    div.page div.header div.functional div.language
+    {   
+        position:absolute;
+        height:30px;
+        width:30px;
+        right:10px;
+        margin-top:5px;
+    }
+    
+    div.page div.header div.functional div.language span.language-panel
+    {
+        display:none;
+    }
+            
+    div.page div.content
+    {
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+            
+    div.page div.footer
+    {
+        height:50px;
+    }
+}

@@ -51,6 +51,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\master.css" />
     <Content Include="draft\complete_registration.htm" />
     <Content Include="draft\cabinet.htm" />
     <Content Include="draft\add_edit_service.htm" />
@@ -70,6 +71,8 @@
     <Content Include="draft\my_services.htm" />
     <Content Include="draft\registration.htm" />
     <Content Include="index.htm" />
+    <Content Include="mockup\portal_2.htm" />
+    <Content Include="mockup\portal_1.htm" />
     <Content Include="mockup\portal.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
