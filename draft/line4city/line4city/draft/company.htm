@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div style="width:50%;">
+        <h1>Add Company</h1>
+        <table>
+            <tr>
+                <td>
+                    Company Name:
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Company Logo:
+                </td>
+                <td>
+                    <img src="https://cdn.vectorstock.com/i/composite/20,90/butterfly-logo-beauty-salon-vector-392090.jpg" style="width:100px;" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Company Location:</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Country:
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    State:
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Street:
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="map" style="width:400px;height:400px;background:yellow"></div>
+                </td>
+            </tr>
+        </table>
+        <form action="company_service.htm">
+            <input type="submit" value="Next" />
+        </form>
+    </div>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+</html>
