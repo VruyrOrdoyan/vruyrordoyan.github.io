@@ -2,3 +2,7 @@ D:\Profile\Projects\line4city\draft\line4city\line4city\bin\line4city.dll
 D:\Profile\Projects\line4city\draft\line4city\line4city\bin\line4city.pdb
 D:\Profile\Projects\line4city\draft\line4city\line4city\obj\Debug\line4city.dll
 D:\Profile\Projects\line4city\draft\line4city\line4city\obj\Debug\line4city.pdb
+D:\Profile\Projects\line4city\preview\vruyrordoyan.github.io\draft\line4city\line4city\bin\line4city.dll
+D:\Profile\Projects\line4city\preview\vruyrordoyan.github.io\draft\line4city\line4city\bin\line4city.pdb
+D:\Profile\Projects\line4city\preview\vruyrordoyan.github.io\draft\line4city\line4city\obj\Debug\line4city.dll
+D:\Profile\Projects\line4city\preview\vruyrordoyan.github.io\draft\line4city\line4city\obj\Debug\line4city.pdb
