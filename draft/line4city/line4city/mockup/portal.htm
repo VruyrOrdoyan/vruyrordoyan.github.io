@@ -36,7 +36,7 @@
                 float:left;
             }
         
-                div.page div.header div.logo
+                div.page div.header div.logo-area div.logo
                 {
                     width: 50px;
                     height: 50px;
@@ -103,42 +103,7 @@
                     height:100%;
                     width:200px;
                 }
-        
-            @media only screen and (max-width: 600px) 
-            {
-                div.page div.header div.functional div.search
-                {   
-                    position:absolute;
-                    top:0;
-                    bottom:0;
-                    left:0;
-                    right:0;
-                    padding-right:50px;
-                }
                 
-                div.page div.header div.functional div.language
-                {   
-                    position:absolute;
-                    height:30px;
-                    width:30px;
-                    right:10px;
-                    margin-top:30px;
-                }
-            }
-            
-            @media only screen and (max-width: 500px) 
-            {
-                div.page div.header div.logo-area
-                {
-                    width:50px;
-                }
-                
-                div.page div.header div.functional
-                {
-                    left:50px;
-                }
-            }
-            
         div.page div.content
         {   
             position: absolute;
@@ -159,6 +124,67 @@
             left:0;
             right:0;
         }
+        @media only screen and (max-width: 600px) 
+        {
+            div.page div.header div.functional div.search
+            {   
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                padding-right:50px;
+            }
+                
+            div.page div.header div.functional div.language
+            {   
+                position:absolute;
+                height:30px;
+                width:30px;
+                right:10px;
+                margin-top:30px;
+            }
+        }
+            
+        @media only screen and (max-width: 500px) 
+        {
+            div.page div.header
+            {
+                height:50px;
+            }
+                
+            div.page div.header div.logo-area
+            {
+                width:50px;
+            }
+                
+            div.page div.header div.logo-area div.logo
+            {   
+                margin-top: 0;
+            }
+                
+            div.page div.header div.functional
+            {
+                left:50px;
+            }
+            
+            div.page div.header div.functional div.search
+            {
+                padding-top:5px;
+            }
+            
+            div.page div.header div.functional div.language
+            {
+                margin-top:5px;
+            }
+                
+            div.page div.content
+            {
+                margin-top:50px;
+            }
+        }
+            
+        
     </style>
 </head>
 <body>
