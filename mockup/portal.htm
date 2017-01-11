@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Line4City</title>
+    <style type="text/css">
+        html, 
+        body {padding:0; margin:0;}
+        /** {
+            box-sizing: border-box;
+        }*/
+        div.conceptual {border: 1px solid #000;border-style:dashed;box-sizing: border-box;}
+        
+        div.page 
+        {   
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            min-height:300px;
+        }
+        
+        div.page div.header
+        {
+            height:100px;
+            position:relative;
+        }
+        
+            div.page div.header div.logo-area
+            {
+                width:170px;
+                height:inherit;
+                display:inline-block;
+                float:left;
+            }
+        
+                div.page div.header div.logo
+                {
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 17px;
+                    margin-left:auto;
+                    margin-right: auto;
+                    text-align:center;
+                }
+        
+            div.page div.header div.functional
+            {
+                display:inline-block;
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:170px;
+                right:0;
+            }
+            
+                div.page div.header div.functional div.search
+                {
+                    background-color:Aqua;
+                    position:absolute;
+                    padding-top:30px;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:200px;
+                    padding-left:10px;
+                }
+                
+                    div.page div.header div.functional div.search div.search-area
+                    {
+                        max-width:400px;
+                        margin-left:auto;
+                        margin-right:auto;
+                        height:30px;
+                        position:relative;
+                    }
+                
+                        div.page div.header div.functional div.search div.search-area input[type="text"]
+                        {   
+                            width:100%;
+                            height:100%;
+                            margin:0;
+                            padding:0;
+                            border-width:0;
+                            border-right-width:30px;
+                            box-sizing: border-box;
+                        }
+                        
+                        div.page div.header div.functional div.search div.search-area button
+                        {   
+                            position:absolute;
+                            right:0;
+                            top:0;
+                            height:100%;
+                            width:30px;
+                        }
+                
+                div.page div.header div.functional div.language
+                {
+                    background-color:Lime;
+                    float:right;
+                    height:100%;
+                    width:200px;
+                }
+        
+            @media only screen and (max-width: 600px) 
+            {
+                div.page div.header div.functional div.search
+                {
+                    background-color:Aqua;
+                    position:absolute;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    padding-right:50px;
+                }
+                
+                div.page div.header div.functional div.language
+                {   
+                    position:absolute;
+                    height:30px;
+                    width:30px;
+                    right:10px;
+                    margin-top:30px;
+                }
+            }
+            
+            @media only screen and (max-width: 500px) 
+            {
+                div.page div.header div.logo-area
+                {
+                    display:none;
+                }
+                
+                div.page div.header div.functional
+                {
+                    left:0;
+                }
+                
+                /*div.page div.header div.functional div.search
+                {
+                    background-color:Aqua;
+                    position:absolute;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    padding-right:50px;
+                }
+                
+                div.page div.header div.functional div.language
+                {   
+                    position:absolute;
+                    height:30px;
+                    width:30px;
+                    right:10px;
+                    margin-top:30px;
+                }*/
+            }
+            
+        div.page div.content
+        {
+            background-color:Gray;
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin-top:100px;
+            margin-bottom:100px;
+        }
+        
+        div.page div.footer
+        {
+            height:100px;
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page conceptual">
+        <div class="header conceptual">
+            <div class="logo-area conceptual">
+                <div class="logo conceptual">
+                    LOGO
+                </div>
+            </div>
+            <div class="functional conceptual">
+                <div class="search conceptual">
+                    <div class="search-area conceptual">
+                        <input type="text" />
+                        <button></button>
+                    </div>
+                    
+                </div>
+                <div class="language conceptual">
+                </div>
+            </div>
+        </div>
+        <div class="content conceptual"></div>
+        <div class="footer conceptual"></div>
+    </div>
+</body>
+</html>
