@@ -9,7 +9,7 @@
         /** {
             box-sizing: border-box;
         }*/
-        div.conceptual {border: 1px solid #000;border-style:dashed;box-sizing: border-box;}
+        .conceptual {border: 1px solid #000;border-style:dashed;box-sizing: border-box;}
         
         div.page 
         {   
@@ -18,7 +18,7 @@
             bottom:0;
             left:0;
             right:0;
-            min-height:300px;
+            min-height:250px;
             min-width:300px;
         }
         
@@ -116,6 +116,32 @@
             overflow:auto;
         }
         
+            div.page div.content div.login
+            {
+                height:20px;
+                text-align:right;
+                padding-right:8px;
+            }
+            
+            div.page div.content div.services
+            {
+                margin-left:auto;
+                margin-right:auto;
+                width:80%;
+                text-align:center;
+            }
+            
+                div.page div.content div.services a.block
+                {
+                    width:200px;
+                    height:200px;
+                    line-height: 200px;
+                    display:inline-block;
+                    margin:10px;
+                    border-radius: 50%;
+                    vertical-align:middle;
+                }
+        
         div.page div.footer
         {
             height:100px;
@@ -124,29 +150,7 @@
             left:0;
             right:0;
         }
-        @media only screen and (max-width: 600px) 
-        {
-            div.page div.header div.functional div.search
-            {   
-                position:absolute;
-                top:0;
-                bottom:0;
-                left:0;
-                right:0;
-                padding-right:50px;
-            }
-                
-            div.page div.header div.functional div.language
-            {   
-                position:absolute;
-                height:30px;
-                width:30px;
-                right:10px;
-                margin-top:30px;
-            }
-        }
-            
-        @media only screen and (max-width: 500px) 
+        @media only screen and (max-width: 800px) 
         {
             div.page div.header
             {
@@ -162,27 +166,45 @@
             {   
                 margin-top: 0;
             }
-                
+            
             div.page div.header div.functional
             {
                 left:50px;
             }
             
             div.page div.header div.functional div.search
-            {
+            {   
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                padding-right:50px;
                 padding-top:5px;
             }
-            
+                
             div.page div.header div.functional div.language
-            {
+            {   
+                position:absolute;
+                height:30px;
+                width:30px;
+                right:10px;
                 margin-top:5px;
             }
-                
+            
             div.page div.content
             {
                 margin-top:50px;
+                margin-bottom:50px;
+            }
+            
+            div.page div.footer
+            {
+                height:50px;
             }
         }
+            
+        
             
         
     </style>
@@ -207,67 +229,24 @@
             </div>
         </div>
         <div class="content conceptual">
-            xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />xxxxxxxxxxxxxxx
-            <br />
+            <div class="login conceptual">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+            <div class="services conceptual">
+                <a href="#" class="block conceptual">
+                    beauty salon
+                </a>
+                <a href="#" class="block conceptual">
+                    massage parlor
+                </a>
+                <a href="#" class="block conceptual">
+                    car wash
+                </a>
+                <a href="#" class="block conceptual">
+                    etc
+                </a>
+            </div>
         </div>
         <div class="footer conceptual">
             
