@@ -3,6 +3,33 @@ body {padding:0; margin:0;overflow:hidden;}
 a {text-decoration:none;}        
 .conceptual {border: 1px solid #000;border-style:dashed;box-sizing: border-box;}
 
+.opener:focus 
+{
+    display:none;
+}
+
+.opener:focus ~ .opening 
+{
+    display:block !important;
+}
+
+.opener:focus ~ .closer
+{
+    display:block;
+}
+
+.closer {display:none;}
+
+.closer:focus
+{
+    display:none;
+}
+
+.closer:focus ~ .opening 
+{
+    display:none !important;
+}
+
 div.draft
 {
     position:absolute;
@@ -10,10 +37,10 @@ div.draft
     z-index:auto;
     transform: rotate(45deg);
     top:220px;
-    left:20%;
     font-family:Arial;
     opacity:0.2;
     overflow:hidden;
+    display:none;
 }
         
 div.page 
@@ -211,18 +238,72 @@ div.page div.content
         width:80%;
      }
      
-        div.page div.content div.company-info div.company-logo
+        div.page div.content div.company-info div.company-header
         {
-            display:inline-block;
-            width:50px;
+            height:60px;
+            position:relative;
+        }
+     
+            div.page div.content div.company-info div.company-header div.company-logo
+            {
+                display:inline-block;
+                float:left;
+                width:50px;
+                height:50px;
+            }
+        
+                div.page div.content div.company-info div.company-header div.company-logo a
+                {
+                    font-size:10px;
+                    float:right;
+                }
+        
+            div.page div.content div.company-info div.company-header div.compani-details
+            {
+                position:absolute;
+                left:50px;
+                right:0;
+                padding:10px;
+                display:inline-block;
+                height:inherit;
+            }
+        
+                div.page div.content div.company-info div.compani-details h4,
+                div.page div.content div.company-info div.compani-details h5
+                {
+                    margin:0;
+                    padding:0;
+                }
+                
+                    div.page div.content div.company-info div.compani-details h5 a
+                    {
+                        float:right;
+                        font-size:16px;
+                    }
+         
+        div.page div.content div.company-info div.company-description
+        {
             height:50px;
         }
         
-        div.page div.content div.company-info div.compani-details
-        {
-            padding:10px;
-            display:inline-block;    
+        div.page div.content div.company-info div.company-line
+        {   
+            text-align:center;
         }
+            div.page div.content div.company-info div.company-line a
+            {
+                cursor:pointer;
+            }   
+                
+            div.page div.content div.company-info div.company-line div.line
+            {
+                text-align:initial;
+                text-align:left;
+                background-color:Aqua;
+                height:60px;
+                display:none;
+            }
+        
         
 div.page div.footer
 {
@@ -288,5 +369,19 @@ div.page div.footer
     div.page div.footer
     {
         height:50px;
+    }
+}
+
+@media only screen and (max-width: 500px) 
+{
+    div.page div.content div.company-info div.company-header
+    {
+        height:100px;
+    }
+    
+    div.page div.content div.company-info div.compani-details h5 a
+    {   
+        float:none;
+        white-space: nowrap;
     }
 }
