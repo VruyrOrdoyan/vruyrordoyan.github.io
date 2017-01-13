@@ -51,6 +51,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="mockup\company_servicel.htm" />
+    <Content Include="mockup\call.htm" />
+    <Content Include="mockup\confirmation.htm" />
+    <Content Include="mockup\complete_register.htm" />
+    <Content Include="mockup\personal_page.htm" />
+    <Content Include="mockup\provider_service.htm" />
+    <Content Include="mockup\register.htm" />
+    <Content Include="mockup\login.htm" />
+    <Content Include="mockup\provider_details.htm" />
     <Content Include="mockup\css\master.css" />
     <Content Include="draft\complete_registration.htm" />
     <Content Include="draft\cabinet.htm" />
@@ -72,9 +81,13 @@
     <Content Include="draft\registration.htm" />
     <Content Include="index.htm" />
     <Content Include="mockup\company.htm" />
+    <Content Include="mockup\img\iconmonstr-id-card-25.svg" />
+    <Content Include="mockup\img\service-provider.png" />
+    <Content Include="mockup\img\service-provider.svg" />
     <Content Include="mockup\service-provider.htm" />
     <Content Include="mockup\portal_1.htm" />
     <Content Include="mockup\portal.htm" />
+    <Content Include="mockup\_template.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -94,7 +107,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1743</DevelopmentServerPort>
+          <DevelopmentServerPort>22688</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

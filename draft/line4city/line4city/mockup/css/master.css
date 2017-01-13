@@ -3,9 +3,14 @@ body {padding:0; margin:0;overflow:hidden;}
 a {text-decoration:none;}        
 .conceptual {border: 1px solid #000;border-style:dashed;box-sizing: border-box;}
 
+.closer, .opener
+{
+    display:block;
+} 
+
 .opener:focus 
 {
-    display:none;
+    /*display:none;*/
 }
 
 .opener:focus ~ .opening 
@@ -28,6 +33,17 @@ a {text-decoration:none;}
 .closer:focus ~ .opening 
 {
     display:none !important;
+}
+
+.opening:hover,
+.opening:active
+{
+    display:block !important;
+} 
+
+.opening:active ~ .closer
+{
+    display:block !important;
 }
 
 div.draft
@@ -295,15 +311,164 @@ div.page div.content
                 cursor:pointer;
             }   
                 
-            div.page div.content div.company-info div.company-line div.line
-            {
-                text-align:initial;
-                text-align:left;
-                background-color:Aqua;
-                height:60px;
-                display:none;
-            }
+div.page div.content div.line
+{
+    
+    text-align:left;
+    
+    /*display:none;*/
+                
+}
+
+    div.page div.content div.line div.line-body
+    {
+        width:80%;
+        height:inherit;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+        div.page div.content div.line div.line-body div.line-item
+        {
+            background-color:#ccc;
+            width:inherit;
+            height: 30px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            text-align:center;
+            padding-top:3.5px;
+        }
         
+            div.page div.content div.line div.line-body div.line-item select
+            {
+                margin-left:10px;
+                float:left;
+                width:80px;
+            }
+            
+            div.page div.content div.line div.line-body div.line-item span
+            {   
+                
+            }
+            
+            div.page div.content div.line div.line-body div.line-item a
+            {
+                float:right;
+                margin-right:10px;
+                display:inline-block;
+                width:80px;
+            }
+
+div.page div.content div.service-providers
+{
+    text-align:left;
+}
+    
+    div.page div.content div.service-providers div.providers
+    {
+        text-align:center;
+        padding:5px;
+    }
+    
+        div.page div.content div.service-providers div.providers h4
+        {
+            text-align:left;
+            margin:0;
+            padding:0;
+        }
+    
+div.page div.content div.provider
+{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 5px;
+    display:inline-block;
+    margin:5px;
+    background-size: 100px;
+    background: url(../img/service-provider.png) no-repeat center center;
+    position:relative;
+}
+        
+    div.page div.content div.provider:hover
+    {
+        background-color:#ccc;
+    }
+        
+    div.page div.content div.provider:hover a.details
+    {
+        opacity:1;
+    }
+        
+    div.page div.content div.provider a.call
+    {
+        line-height:normal;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color:#1AA260;
+        background-color:#ccc;
+    }
+            
+    div.page div.content div.provider a.details
+    {
+        line-height:normal;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color:#00f;
+        background-color:#ccc;
+    }
+            
+    div.page div.content div.provider a.select,
+    div.page div.content div.provider span
+    {   
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        background-color: #FFCE44;
+        opacity:0.7;
+    }
+            
+div.page div.content div.confirmation
+{   
+    text-align:left;
+}
+
+    div.page div.content div.confirmation div.confirmation-details
+    {
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+        div.page div.content div.confirmation div.confirmation-details h1
+        {
+            margin:0;
+            padding:0 0 10px 0;
+        }
+        
+        div.page div.content div.confirmation div.confirmation-details table
+        {
+            width:80%;
+        }
+        
+            div.page div.content div.confirmation div.confirmation-details table tbody tr td
+            {
+                border-bottom:1pt solid black;
+                text-align:center;
+            }
+
+div.page div.content div.login-area
+{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
         
 div.page div.footer
 {
@@ -383,5 +548,33 @@ div.page div.footer
     {   
         float:none;
         white-space: nowrap;
+    }
+    
+    div.page div.content div.line div.line-body div.line-item
+    {
+        height: 60px;
+    }
+    
+    div.page div.content div.line div.line-body div.line-item span
+    {
+        display:block;
+    }
+}
+
+@media only screen and (max-width: 400px) 
+{
+    div.page div.content div.line div.line-body div.line-item
+    {
+        height: 100px;
+    }
+    
+    div.page div.content div.line div.line-body div.line-item select,
+    div.page div.content div.line div.line-body div.line-item span,
+    div.page div.content div.line div.line-body div.line-item a
+    {
+        margin-top:10px;
+        float:none;
+        margin-left:0;
+        margin-right:0;
     }
 }
